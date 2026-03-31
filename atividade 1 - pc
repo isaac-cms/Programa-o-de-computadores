@@ -1,0 +1,42 @@
+a) Elabore um algoritmo que receba dois números, calcule a multiplicação entre eles e apresente o
+resultado.
+Início
+  Leia num1
+  Leia num2
+  resultado <--- num1 * num2
+  Escreva resultado
+Fim
+
+b) Desenvolva um algoritmo que receba cinco números, calcule a média aritmética e apresente o
+resultado final.
+Início
+  Leia num1, num2, num3, num4, num5
+  média <--- (num1 + num2 + num3 + num4 + num5) / 5
+  Escreva média
+Fim
+
+c) Construa um algoritmo que receba o valor de um produto e calcule o preço final considerando um
+acréscimo de 8% de imposto.
+Início
+  Leia valor
+  imposto <--- valor * 0.08
+  preco_final <--- valor + imposto
+  Escreva preco_final
+Fim
+
+d) Elabore um algoritmo que receba a temperatura em graus Celsius e apresente o valor convertido
+para graus Fahrenheit.
+Início
+  Leia celsius
+  fahrenheit <--- (celsius * 9/5) + 32
+  Escreva fahrenheit
+Fim
+
+e) Construa um algoritmo que receba a quantidade de horas trabalhadas por um funcionário e o valor
+da hora trabalhada, calculando o salário total.
+Início
+  Leia horas
+  Leia valor_hora
+  salário <--- horas * valor_hora
+  Escreva salário
+Fim
