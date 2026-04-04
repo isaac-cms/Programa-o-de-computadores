@@ -1,0 +1,278 @@
+1. Leia um número inteiro e informe se ele é positivo ou negativo.
+n = int(input("1) Digite um número: "))
+if n >= 0:
+    print("Positivo")
+else:
+    print("Negativo")
+
+2. Leia um número (entrada padrão do input) e: Converta para inteiro; Exiba o dobro do valor.
+n = int(input("2) Digite um número: "))
+print("Dobro:", n * 2)
+
+3. Leia um valor e: Mostre o valor digitado; Mostre o tipo da variável usando type().
+valor = input("3) Digite um valor: ")
+print("Valor:", valor)
+print("Tipo:", type(valor))
+
+4. Leia um número e informe se ele é par ou ímpar.
+n = int(input("4) Digite um número: "))
+if n % 2 == 0:
+    print("Par")
+else:
+    print("Ímpar")
+
+5. Leia um número como texto (input) e: Converta para inteiro; Mostre o triplo.
+n = int(input("5) Digite um número: "))
+print("Triplo:", n * 3)
+
+6. Leia dois números e exiba qual é o maior.
+a = int(input("6) Digite o primeiro número: "))
+b = int(input("Digite o segundo número: "))
+print("Maior:", max(a, b))
+
+7. Leia um valor e verifique: Se é maior que 10 → “Maior que 10”; Caso contrário → “Menor ou
+igual a 10”.
+n = int(input("7) Digite um número: "))
+if n > 10:
+    print("Maior que 10")
+else:
+    print("Menor ou igual a 10")
+
+8. Leia um número e: Se for positivo, mostre a raiz aproximada (use ** 0.5); Caso contrário,
+informe “Número inválido”.
+n = int(input("8) Digite um número: "))
+if n > 0:
+    print("Raiz:", n ** 0.5)
+else:
+    print("Número inválido")
+
+9. Leia um valor e: Converta para float; Mostre a metade.
+n = float(input("9) Digite um valor: "))
+print("Metade:", n / 2)
+
+10. Leia um número e informe: “Dentro do intervalo” se estiver entre 0 e 10; “Fora do intervalo”
+caso contrário.
+n = int(input("10) Digite um número: "))
+if 0 <= n <= 10:
+    print("Dentro do intervalo")
+else:
+    print("Fora do intervalo")
+
+11. Leia um número e: Se for par e positivo → “Par positivo”; Se for par e negativo → “Par
+negativo”; Caso contrário → “Ímpar”.
+n = int(input("11) Digite um número: "))
+if n % 2 == 0:
+    if n > 0:
+        print("Par positivo")
+    else:
+        print("Par negativo")
+else:
+    print("Ímpar")
+
+12. Leia dois números e: Mostre a soma; Mostre qual é maior ou se são iguais.
+a = int(input("12) Digite o primeiro número: "))
+b = int(input("Digite o segundo número: "))
+print("Soma:", a + b)
+if a > b:
+    print("Maior:", a)
+elif b > a:
+    print("Maior:", b)
+else:
+    print("São iguais")
+
+13. Leia um número e: Se for maior que 100 → mostre metade; Senão → mostre o dobro.
+n = int(input("13) Digite um número: ")).
+if n > 100:
+    print("Metade:", n / 2)
+else:
+    print("Dobro:", n * 2)
+
+14. Leia um valor e: Converta para inteiro; Se for múltiplo de 3 → “Múltiplo de 3”; Senão → “Não é
+múltiplo”.
+n = int(input("14) Digite um número: "))
+if n % 3 == 0:
+    print("Múltiplo de 3")
+else:
+    print("Não é múltiplo")
+
+15. Leia um número e: Se estiver entre 10 e 20 → “Dentro”; Caso contrário → “Fora”.
+n = int(input("15) Digite um número: ")).
+if 10 <= n <= 20:
+    print("Dentro")
+else:
+    print("Fora")
+
+16. Leia um valor e: Mostre o tipo; Se for numérico (após conversão) → mostre o quadrado.
+valor = input("16) Digite um valor: ").
+print("Tipo:", type(valor))
+try:
+    num = float(valor)
+    print("Quadrado:", num ** 2)
+except:
+    pass
+
+17. Leia idade e: Mostre: Menor de idade (<18); Adulto (18 a 59); Idoso (60+)
+idade = int(input("17) Digite sua idade: ")).
+if idade < 18:
+    print("Menor de idade")
+elif idade <= 59:
+    print("Adulto")
+else:
+    print("Idoso")
+
+18. Leia um número e: Mostre se ele é par positivo, par negativo, impar positivo, impar negativo ou
+neutro.
+n = int(input("18) Digite um número: "))
+if n == 0:
+    print("Neutro")
+elif n % 2 == 0:
+    if n > 0:
+        print("Par positivo")
+    else:
+        print("Par negativo")
+else:
+    if n > 0:
+        print("Ímpar positivo")
+    else:
+        print("Ímpar negativo")
+
+19. Leia dois números e: Verifique se são iguais ou diferentes. Sendo diferentes mostre a diferença
+entre eles.
+a = int(input("19) Digite o primeiro número: "))
+b = int(input("Digite o segundo número: "))
+if a == b:
+    print("Iguais")
+else:
+    print("Diferentes")
+    print("Diferença:", abs(a - b))
+
+20. Leia um valor e: verifique se eles está entre 0 e 100, caso o número esteja fora do intervalo,
+mostre na tela o valor.
+n = int(input("20) Digite um número: "))
+if 0 <= n <= 100:
+    print("Dentro do intervalo")
+else:
+    print("Fora:", n)
+
+21. Leia um número inteiro informado pelo usuário.Verifique se o número é positivo. Caso seja,
+analise se ele é múltiplo de 2 e de 3 ao mesmo tempo. Se atender a ambas as condições, exiba:
+“Múltiplo de 2 e 3”. Caso contrário, exiba: “Não atende”. Se o número não for positivo, exiba:
+“Número inválido”.
+n = int(input("21) Digite um número: "))
+if n > 0:
+    if n % 2 == 0 and n % 3 == 0:
+        print("Múltiplo de 2 e 3")
+    else:
+        print("Não atende")
+else:
+    print("Número inválido")
+
+22. Leia um valor informado pelo usuário. Tente convertê-lo para número inteiro. Caso não seja
+possível realizar a conversão, exiba: “Entrada inválida”. Caso a conversão seja bem-sucedida: Se
+o número for maior que 10, exiba: “Alto”. Caso contrário, exiba: “Baixo”.
+valor = input("22) Digite um valor: ")
+try:
+    n = int(valor)
+    if n > 10:
+        print("Alto")
+    else:
+        print("Baixo")
+except:
+    print("Entrada inválida")
+
+23. Leia três números inteiros informados pelo usuário. Exiba em ordem decrescente o resto da
+divisão por 3.
+a = int(input("23) Número 1: "))
+b = int(input("Número 2: "))
+c = int(input("Número 3: "))
+restos = [a % 3, b % 3, c % 3]
+restos.sort(reverse=True)
+print("Ordem decrescente dos restos:", restos)
+
+24. Leia um número inteiro. Verifique se ele está no intervalo de 1 a 100 (inclusive). Se estiver:
+Verifique se o número é par ou ímpar; Exiba: “Par no intervalo” ou “Ímpar no intervalo”. Caso não
+esteja no intervalo, exiba: “Fora do intervalo”.
+n = int(input("24) Digite um número: "))
+if 1 <= n <= 100:
+    if n % 2 == 0:
+        print("Par no intervalo")
+    else:
+        print("Ímpar no intervalo")
+else:
+    print("Fora do intervalo")
+
+25. Leia um valor informado pelo usuário. Exiba o tipo da variável lida. Verifique se é possível
+converter o valor para número real (float). Se for possível, exiba o resultado da divisão desse
+número por 2. Caso contrário, exiba: “Não numérico”.
+valor = input("25) Digite um valor: ")
+print("Tipo:", type(valor))
+try:
+    num = float(valor)
+    print("Dividido por 2:", num / 2)
+except:
+    print("Não numérico")
+
+26. Leia um número inteiro. Classifique o número de acordo com as seguintes regras: Se for maior que 0:
+Se for menor que 10 → exiba: “Pequeno”; Se estiver entre 10 e 100 → exiba: “Médio”; Se for maior que
+100 → exiba: “Grande”; Caso contrário, exiba: “Negativo ou zero”.
+n = int(input("26) Digite um número: "))
+if n > 0:
+    if n < 10:
+        print("Pequeno")
+    elif n <= 100:
+        print("Médio")
+    else:
+        print("Grande")
+else:
+    print("Negativo ou zero")
+
+27. Leia dois números informados pelo usuário. Se ambos forem positivos, calcule e exiba a soma entre
+eles Caso contrário, calcule e exiba o produto entre eles.
+a = int(input("27) Número 1: "))
+b = int(input("Número 2: "))
+if a > 0 and b > 0:
+    print("Soma:", a + b)
+else:
+    print("Produto:", a * b)
+
+28. Leia um valor informado pelo usuário. Verifique o tipo da variável; Caso seja possível interpretá-lo
+como um valor numérico: Se for um número inteiro, exiba o dobro; Caso seja um número real, exiba a
+metade; Caso não seja possível interpretar como número, exiba: “Tipo inválido”.
+valor = input("28) Digite um valor: ")
+try:
+    if "." in valor:
+        num = float(valor)
+        print("Metade:", num / 2)
+    else:
+        num = int(valor)
+        print("Dobro:", num * 2)
+except:
+    print("Tipo inválido")
+
+29. Leia um número inteiro. Verifique se ele é múltiplo de 5; Se for: Se o número for maior que 50 →
+exiba: “Múltiplo alto”; Caso contrário → exiba: “Múltiplo baixo”; Caso não seja múltiplo de 5, exiba: “Não é
+múltiplo”.
+n = int(input("29) Digite um número: "))
+if n % 5 == 0:
+    if n > 50:
+        print("Múltiplo alto")
+    else:
+        print("Múltiplo baixo")
+else:
+    print("Não é múltiplo")
+30. Leia um valor informado pelo usuário. Tente convertê-lo para número inteiro. Caso não seja possível,
+exiba: “Entrada inválida”; Caso seja possível: Verifique se o número é par: Se for par e maior que 100 →
+exiba: “Par alto”; Se for par e menor ou igual a 100 → exiba: “Par baixo”; Caso não seja par, exiba:
+“Ímpar”.
+valor = input("30) Digite um valor: ")
+try:
+    n = int(valor)
+    if n % 2 == 0:
+        if n > 100:
+            print("Par alto")
+        else:
+            print("Par baixo")
+    else:
+        print("Ímpar")
+except:
+    print("Entrada inválida")
