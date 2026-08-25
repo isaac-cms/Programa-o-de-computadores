@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TripEasy — projeto integrador de viagens com seção multimídia acessível.">
+  <title>TripEasy | Explore novos destinos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="TripEasy - início">Trip<span>Easy</span></a>
+      <ul class="nav-links">
+        <li><a href="#destinos">Destinos</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Sua próxima experiência começa aqui</p>
+          <h1>Viaje mais.<br><span>Viva melhor.</span></h1>
+          <p class="hero-text">Encontre destinos, monte seu roteiro e transforme cada viagem em uma história para lembrar.</p>
+          <a class="button" href="#destinos">Explorar destinos</a>
+        </div>
+        <div class="hero-card" aria-label="Destaque de viagem">
+          <div class="sun" aria-hidden="true"></div>
+          <p>Destino em destaque</p>
+          <h2>Fernando de Noronha</h2>
+          <span>Brasil · 5 dias</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="destinos" class="section container">
+      <div class="section-heading">
+        <div><p class="eyebrow">Descubra</p><h2>Destinos para você</h2></div>
+        <p>Escolha um lugar, prepare as malas e aproveite.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="card-image rio" role="img" aria-label="Paisagem do Rio de Janeiro"></div><div class="card-body"><span>Brasil</span><h3>Rio de Janeiro</h3><p>Praias, cultura e paisagens inesquecíveis.</p></div></article>
+        <article class="card"><div class="card-image gramado" role="img" aria-label="Paisagem de Gramado"></div><div class="card-body"><span>Brasil</span><h3>Gramado</h3><p>Clima europeu, gastronomia e charme.</p></div></article>
+        <article class="card"><div class="card-image noronha" role="img" aria-label="Paisagem de Fernando de Noronha"></div><div class="card-body"><span>Brasil</span><h3>Fernando de Noronha</h3><p>Natureza preservada e águas cristalinas.</p></div></article>
+      </div>
+    </section>
+
+    <section id="experiencia" class="media-section">
+      <div class="container media-grid">
+        <div>
+          <p class="eyebrow">Experiência TripEasy</p>
+          <h2>Coloque o destino no clima.</h2>
+          <p>Ouça uma pequena trilha criada especialmente para representar o momento de planejar uma nova viagem.</p>
+          <div class="audio-box">
+            <!-- preload="metadata": a faixa é curta, mas metadata evita baixar todo o áudio antes da interação. -->
+            <audio id="trilha" controls preload="metadata">
+              <source src="assets/audio/tripeasy-tour.mp3" type="audio/mpeg">
+              <source src="assets/audio/tripeasy-tour.ogg" type="audio/ogg">
+              Seu navegador não suporta o elemento de áudio.
+            </audio>
+            <small id="format-status" aria-live="polite">Verificando compatibilidade...</small>
+          </div>
+        </div>
+        <aside class="info-panel">
+          <h3>Por que usamos fallback?</h3>
+          <p>O navegador avalia os formatos na ordem apresentada e utiliza o primeiro que consegue reproduzir.</p>
+          <ul>
+            <li>MP3 — ampla compatibilidade</li>
+            <li>OGG — formato alternativo</li>
+            <li>preload metadata — carregamento econômico</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="contato" class="section container contact">
+      <div><p class="eyebrow">Planeje sua próxima</p><h2>Qual será o destino?</h2><p>Conte para onde você gostaria de viajar.</p></div>
+      <form id="contact-form">
+        <label for="nome">Seu nome</label>
+        <input id="nome" name="nome" type="text" required placeholder="Digite seu nome">
+        <label for="destino">Destino dos sonhos</label>
+        <input id="destino" name="destino" type="text" required placeholder="Ex.: Salvador">
+        <button class="button" type="submit">Enviar ideia</button>
+        <small id="form-status" aria-live="polite"></small>
+      </form>
+    </section>
+  </main>
+
+  <footer><div class="container"><strong>TripEasy</strong><span>Projeto Integrador · Front-end para Web</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
